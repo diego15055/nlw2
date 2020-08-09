@@ -37,6 +37,9 @@ function TeacherList() {
         <TeacherItemComponent />
         <TeacherItemComponent />
         <TeacherItemComponent />
+        <TeacherItemComponent />
+        <TeacherItemComponent />
+        <TeacherItemComponent />
       </MainPage>
     </PageTeacherList>
   );
