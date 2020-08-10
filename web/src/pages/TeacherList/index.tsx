@@ -1,8 +1,9 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
-import { PageTeacherList, FormSearch, InputBlock, MainPage} from './styles'
+import { PageTeacherList, FormSearch, MainPage} from './styles'
 import PageHeaderComponent from '../../components/PageHeader';
 import TeacherItemComponent from '../../components/TeacherItem';
+import Input from '../../components/Input';
 
 function TeacherList() {
 
@@ -13,20 +14,9 @@ function TeacherList() {
       <PageHeaderComponent title="Estes sao os Proffys disponiveis.">
         <FormSearch id="search-teacher">
 
-          <InputBlock>
-            <label htmlFor="subject">Materia</label>
-            <input type="text" id="subject"/>
-          </InputBlock>
-
-          <InputBlock>
-            <label htmlFor="week_day">Dia da Semana</label>
-            <input type="text" id="week_day"/>
-          </InputBlock>
-
-          <InputBlock>
-            <label htmlFor="time">Hora</label>
-            <input type="text" id="time"/>
-          </InputBlock>
+          <Input name="subject" label="Materia"/>
+          <Input name="week_day" label="Dia da Semana"/>
+          <Input type="time" name="time" label="Hora"/>
 
         </FormSearch>
       </PageHeaderComponent>
@@ -34,12 +24,7 @@ function TeacherList() {
       <MainPage>
         <TeacherItemComponent />
         <TeacherItemComponent />
-        <TeacherItemComponent />
-        <TeacherItemComponent />
-        <TeacherItemComponent />
-        <TeacherItemComponent />
-        <TeacherItemComponent />
-        <TeacherItemComponent />
+
       </MainPage>
     </PageTeacherList>
   );
